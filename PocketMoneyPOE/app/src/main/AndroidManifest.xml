@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PocketMoneyPOE"
+        tools:targetApi="31">
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ExpensesActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".CategoryTotals"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ExpensesTotals"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".GoalsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ChartActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".SpendingOverviewActivity"
+            android:exported="true">
+        </activity>
+
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+</manifest>
